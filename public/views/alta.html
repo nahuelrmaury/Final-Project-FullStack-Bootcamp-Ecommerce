@@ -1,0 +1,68 @@
+<div class="alta-format">
+    <section class="section-product-form main-form">
+        <fieldset class="form-style-9">
+            <legend>
+                <h2>Formulario de Alta</h2>
+            </legend>
+
+            <div class="product-form-container">
+                <form action="/api/products" method="post" id="form-alta-producto" enctype="multipart/form-data">
+                    <input type="hidden" id="id" name="id">
+                    <input type="hidden" id="cantidad" name="cantidad" placeholder="1" value="1">
+
+
+                    <div class="main-form__formato-div">
+                        <ul>
+                            <li>
+                                <input type="text" id="name" name="name" class="field-style field-split align-left"
+                                    placeholder="Nombre">
+                                <input type="text" id="price" name="price" class="field-style field-split align-right"
+                                    placeholder="Precio">
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <input type="text" id="description" name="description" placeholder="Descripción"
+                                    class="field-style field-full align-none">
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <input type="text" id="descriptionLarge" name="descriptionLarge"
+                                    placeholder="Descripción larga" class="field-style field-full align-none">
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <input type="text" id="image" name="image" placeholder="URL Imagen"
+                                    class="field-style field-full align-none">
+                            </li>
+                        </ul>
+
+                        <div class="hide-cantidad">
+                            <label for="cantidad">Cantidad: </label>
+                            <input type="text" id="cantidad" name="cantidad" class="cantidad-value-reset" value="1" disabled>
+                        </div>
+
+                        <div>
+                            <button id="btn-create" class="button-separation">Crear</button>
+                            <button type="button" id="btn-update" class="button-separation" disabled>Guardar</button>
+                            <button type="button" id="btn-cancel" class="button-separation" disabled>Cancelar</button>
+                        </div>
+                </form>
+            </div>
+        </fieldset>
+    </section>
+
+    <section class="section-products-table section-product-form main-form">
+        <fieldset class="form-style-9-bis">
+            <legend>
+                <h2>Listado de productos</h2>
+            </legend>
+            <div class="products-table-container"></div>
+        </fieldset>
+    </section>
+</div>

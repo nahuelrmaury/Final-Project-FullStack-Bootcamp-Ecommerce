@@ -1,0 +1,188 @@
+.slider {
+    color: #001d3d;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+    &__nav {
+        width: 12px;
+        height: 12px;
+        margin: 0 12px 6rem 12px;
+        border-radius: 50%;
+        z-index: 10;
+        outline: 6px solid #ccc;
+        outline-offset: -6px;
+        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        cursor: pointer;
+        appearance: none;
+        backface-visibility: hidden;
+
+        @media (max-width: 2560px) {
+            margin: 0 12px 320px 12px;
+        }
+
+        @media (max-width: 1440px) {
+            margin: 0 12px 320px 12px;
+        }
+
+        @media (max-width: 1024px) {
+            margin: 0 12px 353px 12px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 0 12px 353px 12px;
+        }
+
+        @media (max-width: 425px) {
+            margin: 0 12px 365px 12px;
+        }
+
+        @media (max-width: 375px) {
+            margin: 0 12px 365px 12px;
+        }
+
+        @media (max-width: 320px) {
+            margin: 0 12px 365px 12px;
+        }
+    }
+
+    &__nav:checked {
+        animation: check 0.4s linear forwards;
+    }
+
+    &__nav:checked:nth-of-type(1)~.slider__inner {
+        left: 0%;
+    }
+
+    &__nav:checked:nth-of-type(2)~.slider__inner {
+        left: -100%;
+    }
+
+    &__nav:checked:nth-of-type(3)~.slider__inner {
+        left: -200%;
+    }
+
+    &__nav:checked:nth-of-type(4)~.slider__inner {
+        left: -300%;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400%;
+        height: 110%;
+        transition: left 0.4s;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__contents {
+        height: 300px;
+        padding: .5rem;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 1024px) {}
+    }
+
+    &__image {
+        font-size: 2.7rem;
+        color: #2196F3;
+        // margin-top: 90px;
+
+        & img {
+            margin-top: 20px;
+            width: 100%;
+            min-width: 220px;
+            height: 250px;
+            min-height: 200px;
+
+            @media (max-width: 1440px) {
+                margin-top: 20px;
+                width: 100%;
+                min-width: 220px;
+                height: 250px;
+                min-height: 200px;
+            }
+
+            @media (max-width: 1024px) {
+                margin-top: 0;
+                width: 100%;
+                min-width: 220px;
+                height: 100px;
+                min-height: 200px;
+            }
+
+            @media (max-width: 768px) {
+                margin-top: 0;
+                width: 100%;
+                min-width: 220px;
+                height: 100px;
+                min-height: 200px;
+            }
+
+            @media (max-width: 425px) {
+                margin-top: 0;
+                width: 100%;
+                min-width: 220px;
+                height: 100px;
+                min-height: 200px;
+
+            }
+
+            @media (max-width: 375px) {
+                margin-top: 0;
+                width: 100%;
+                min-width: 220px;
+                height: 100px;
+                min-height: 200px;
+
+            }
+        }
+    }
+
+    &__caption {
+        font-weight: 500;
+        margin: 6rem 0 3rem;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        color: #999;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        color: #001d3d;
+        background-clip: text;
+        font-size: 20px;
+
+        @media(max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+}
+
+@keyframes check {
+    50% {
+        outline-color: #001d3d;
+        box-shadow: 0 0 0 12px #001d3d, 0 0 0 36px #001d3d77;
+    }
+
+    100% {
+        outline-color: #001d3d;
+        box-shadow: 0 0 0 0 #001d3d, 0 0 0 0 #001d3d36;
+    }
+}

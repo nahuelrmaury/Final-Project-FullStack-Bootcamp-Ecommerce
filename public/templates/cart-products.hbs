@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>{{image}}</td>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+        </tr>
+        {{/each}}
+        <tr>
+            <td></td>
+            <td>Precio Total</td>
+            <td>{{this.total}}</td>
+        </tr>
+    </tbody>
+</table>

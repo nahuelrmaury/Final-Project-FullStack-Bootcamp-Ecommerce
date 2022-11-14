@@ -1,0 +1,351 @@
+#boton-carrito {
+    border: none;
+    color: white;
+    font-size: 13px;
+    background-color: #378a7e;
+    transition: all .3s;
+    position: absolute;
+    right: 0;
+    padding-left: 0;
+    z-index: 9999999;
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
+
+    @media (max-width: 1024px) {
+        position: fixed;
+        right: 15px;
+        bottom: 20px;
+        background-color: #378a7e;
+        height: 64px;
+        width: 69px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+    &:focus {
+        outline: none;
+        color: white;
+    }
+
+    &:active {
+        color: white;
+    }
+}
+
+.producto {
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.precioProducto {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#vaciar-carrito {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #2a9d907e;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px !important;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    width: 100px;
+    margin: 0 auto;
+
+    &:hover {
+        background: #f0f0f0;
+    }
+
+    &:active {
+        background: #f0f0f0;
+        position: relative;
+        top: 1px;
+    }
+}
+
+#comprar-carrito {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #2a9d907e;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px !important;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    width: 100px;
+    margin: 0 auto;
+
+    &:hover {
+        background: #f0f0f0;
+    }
+
+    &:active {
+        background: #f0f0f0;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.btns-format {
+    display: flex;
+    flex-wrap: wrap;
+    width: 47%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    @media (max-width: 825px){
+        width: 61%;
+    }
+
+    & button {
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        background-color: #ffffff;
+        border-radius: 6px;
+        border: 2px solid #335a7179;
+        display: inline-block;
+        cursor: pointer;
+        color: #000000;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 24px !important;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+        width: 100px;
+        margin: 0 5px 0 5px;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+
+        &:active {
+            background: #f0f0f0;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+.modal-contenedor {
+    color: black;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: #d1e9e7;
+    width: 80%;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+    border-radius: 10px;
+    border: 6px solid #305A72;
+    max-width: 700px;
+
+    @media (max-width: 375px) {
+        width: 250px;
+    }
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: black;
+    padding-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: gray;
+    border: none;
+    background-color: #d1e9e7;
+
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+}
+
+.productoEnCarrito {
+    border-left: 5px solid #2a9d9060;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #2a9d9060;
+    text-align: center;
+    align-items: center;
+    width: 97%;
+
+    &:hover {
+        border-left: 5px solid #2a9d8f;
+        border-bottom: 5px solid #2a9d8f;
+    }
+}
+
+.boton-eliminar {
+    background-color: #d1e9e7;
+    color: rgb(158, 0, 0);
+    border: none;
+    font-size: 25px;
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(218, 0, 0);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.nav-var-active {
+    color: black;
+}
+
+#contadorCarrito {
+    display: inline-block;
+    position: absolute;
+    top: 43px;
+    left: 45px;
+    z-index: 9999999;
+    color: white;
+    font-weight: bold;
+
+    @media(max-width: 1024px) {
+        display: inline-block;
+        top: 40px;
+        left: 50px;
+        z-index: 9999999;
+    }
+}
+
+.modal_product-item {
+    width: 100px;
+}
+
+#precio {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+#subtotal {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+#cantidad {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.modal_products-header {
+    display: flex;
+    width: 100%;
+}
+
+#item-foto {
+    margin-left: 20px;
+}
+
+#item-nombre {
+    margin-left: -17px;
+
+    @media (max-width: 768px) {
+        margin-left: 105px;
+    }
+
+    @media (max-width: 654px) {
+        margin-left: 80px;
+    }
+
+    @media (max-width: 568px) {
+        margin-left: 55px;
+    }
+
+    @media (max-width: 468px) {
+        margin-left: 15px;
+    }
+
+    @media (max-width: 400px) {
+        margin-left: -20px;
+    }
+}
+
+#item-cantidad {
+    margin-left: 20px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+#item-precio {
+    margin-left: 38px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+#item-subtotal {
+    margin-left: 20px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

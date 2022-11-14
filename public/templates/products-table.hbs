@@ -1,0 +1,39 @@
+{{#if products.length }}
+    <table class="table-products">
+        <thead>
+            <tr>
+                <th scope="column" class="cell-id">Id</th>
+                <th scope="column">Nombre</th>
+                <th scope="column" class="cell-price">Precio</th>
+                {{!-- <th scope="column" class="cell-description">Descripción</th> --}}
+                {{!-- <th scope="column">Descripción larga</th> --}}
+                {{!-- <th scope="column">Imagen</th> --}}
+                <th scope="column">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr data-id="{{id}}">
+                    <td class="cell-id">{{id}}</td>
+                    <td class="cell-name">{{name}}</td>
+                    <td class="cell-price">{{price}}</td>
+                    <td class="cell-description">{{description}}</td>
+                    <td class="cell-descriptionLarge">{{descriptionLarge}}</td>
+                    <td class="cell-image">{{image}}</td>
+                    <td class="hide-cantidad">{{cantidad}}</td>
+                    <td>
+                        <button class="btn-edit">🖋️</button>
+                        <button class="btn-delete">❌</button>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"  class="table-products__bottom">Se encontraron {{products.length}} productos</td>
+            </tr>
+        </tfoot>
+    </table>
+{{else}}
+    <p>No se encontraron productos</p>
+{{/if}}

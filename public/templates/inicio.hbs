@@ -1,0 +1,33 @@
+{{#if products.length }}
+    {{#each products}}
+    <div class="card" data-id="{{id}}">
+        <!-- <a href="#" class="card__link">Comprar</a> -->
+        <article class="card__article">
+                    <div class="card__image-container card__face card__front">
+                        <img src="{{image}}" alt="Producto" class="card__image">
+                        <p class="card__heading">{{name}}</p>
+                        <div class="card__description">
+                            <h4>{{description}}</h4>
+                        </div>
+                        <h3>Precio: ${{price}}</h3>
+                    </div>
+                    <div class="card__content card__face card__back">
+                        <h3 class="card__heading__back">{{name}}</h3>
+                        <div class="card__description__back">
+                            <p>{{descriptionLarge}}</p>
+                        </div>
+                        <div class="card__description__back__small">
+                            <p>{{description}}</p>
+                        </div>
+                        <div class="card__back__link">
+                            <p>Precio: ${{price}}</p>
+                            <button class="card__link"><img src="../img/icons/add_cart1.png" alt="" class="buyBtn" id="{{id}}"></button>
+                            <button class="card__link"><img src="../img/icons/share_icon.png" alt=""></button>
+                        </div>
+                    </div>
+                </article>
+    </div>
+    {{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}

@@ -1,0 +1,28 @@
+.card {
+    border-radius: 10px;
+    transition: all .2s;
+
+    &:hover {
+        transform-origin: bottom;
+    }
+
+    &:nth-child(5n+1) {
+        background-color: transparent;
+    }
+
+    &:nth-child(5n+2) {
+        background-color: transparent;
+    }
+
+    &:nth-child(5n+3) {
+        background-color: transparent;
+    }
+
+    &:nth-child(5n+4) {
+        background-color: transparent;
+    }
+
+    &:nth-child(5n+5) {
+        background-color: transparent;
+    }
+}

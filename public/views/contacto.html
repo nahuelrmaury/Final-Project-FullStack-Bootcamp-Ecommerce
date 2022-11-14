@@ -1,0 +1,49 @@
+<div class="secondary-us">
+    <section class="secondary-form">
+        <fieldset class="secondary-form__formato-container form-style-9-bis2">
+            <legend>
+                <h2>Contactate con nosotros</h2>
+            </legend>
+            <form action="contacto.html" method="get" class="secondary-form__contacto" id="secondaryForm">
+                <div class="secondary-form__container">
+                    <div class="secondary-form__group" id="nameGroup">
+                        <label for="nombre" class="format-correction">Nombre:* </label>
+                        <input type="text" id="nombre" name="nombre" autofocus value=""
+                            placeholder="Ingrese su nombre...">
+                        <div class="secondary-form__input-error">
+                            <p>Soporta caracteres utilizados en el idioma
+                                español, con y sin acentuaciones. También números, puntos, comas, comillas
+                                simples y dobles, espacios, barras, guiones medios y bajos. 30 caracteres como
+                                máximo.</p>
+                        </div>
+                    </div>
+                    <div class="secondary-form__group" id="emailGroup">
+                        <label for="email">E-mail:* </label>
+                        <input type="email" id="email" name="email" value="" placeholder="example@example.com">
+                        <div class="secondary-form__input-error">
+                            <p>El e-mail debe tener su estructura correspondiente. Por ejemplo: example@example.com</p>
+                        </div>
+                    </div>
+                    <div class="secondary-form__group" id="commentsGroup">
+                        <label for="comments">Comentarios:* </label>
+                        <textarea id="comments" name="comments" value=""
+                            placeholder="Ingrese su comentario..."></textarea>
+                        <div class="secondary-form__input-error">
+                            <p>Texto libre de hasta 2000 caracteres como máximo.</p>
+                        </div>
+                    </div>
+                    <div class="secondary-form__submit">
+                        <button type="submit" id="submit" class="btn-submit">Enviar</button>
+                        <button type="reset" id="restablecer" class="btn-reset">Restablecer</button>
+                        <div class="secondary-form__success" id="secondaryFormSuccess">
+                            <p>El mensaje fue enviado correctamente. A la brevedad recibirá su respuesta.</p>
+                        </div>
+                        <div class="secondary-form__error" id="secondaryFormError">
+                            <p>El mensaje no fue enviado. Por favor rellene correctamente el formulario.</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</div>

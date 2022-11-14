@@ -1,0 +1,83 @@
+.main-promises {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, [col] 22.5%);
+    color: #444;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 30px 20px;
+
+    &__option {
+        background-color: #F4A261;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 150%;
+        text-align: center;
+        height: 100px;
+        min-height: 156px;
+        box-shadow: 0 1.5px 7px rgba(0, 0, 0, 0.238);
+        border: 1px rgba(0, 0, 0, 0.155) solid;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            min-height: 180px;
+        }
+
+        @media (max-width: 425px) {
+            min-height: 100px;
+        }
+
+        & img {
+            width: 70px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5px;
+
+            @media (max-width: 768px) {
+                padding-top: 12px;
+                margin-top: 0;
+            }
+
+            @media (max-width: 425px) {
+                margin-top: 3px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        & p {
+            margin: 10px 0;
+            padding: 10px;
+            color: black;
+            text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.15);
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 21px;
+            }
+
+            @media (max-width: 706px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 425px) {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        grid-template-columns: repeat(2, [col] 22.5%);
+        grid-gap: 50px;
+
+        &__option {
+            margin: 0 -20px;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+#b1,
+#b2,
+#b3,
+#b4,
+#b5,
+#b6,
+#b7,
+#b8,
+#b9 {
+    width: 80px;
+    height: 52px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
+
+    @media(max-width: 425px) {
+        width: 50px;
+        height: 30px;
+    }
+
+    @media(max-width: 375px) {
+        width: 40px;
+        height: 26px;
+    }
+}
+
+#but {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #2a9d907e;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px !important;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    width: 100px;
+    margin: 5px auto;
+
+    &:hover {
+        background: #f0f0f0;
+    }
+
+    &:active {
+        background: #f0f0f0;
+        position: relative;
+        top: 1px;
+    }
+}
+
+#print {
+    color: #2a9d8f;
+    font-size: 20px;
+}
+
+#main-nosotros {
+    text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+
+    @media (max-width: 425px) {
+        width: 80%;
+        max-width: 325px;
+    }
+
+    @media (max-width: 375px) {
+        max-width: 250px;
+    }
+}
+
+#ins {
+    color: #335a71;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 10px 5px;
+
+    @media (max-width: 425px) {
+        font-size: 35px;
+        margin: 0;
+    }
+}
+
+.game-title {
+    margin-top: 1px;
+    color: #335a71;
+
+    font-size: 40px;
+
+    @media (max-width: 425px) {
+        font-size: 20px;
+    }
+}
+
+#dins {
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+
+    @media (max-width: 425px) {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+}
+
+#print {
+    margin-top: -10px;
+}
+
+.secondary-us {
+    width: 100%;
+}
+
+.form-style-9-bis2 {
+    background-color: #fafafaa8;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+    background-color: #fafafaa8;
+    margin-bottom: 24px;
+}
+
+.form-style-8 {
+
+    background-color: #fafafaa8;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+    background-color: #fafafaa8;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+
+    & h2 {
+        border: 6px solid #305A72;
+        background-color: #fafafa;
+        padding: 10px;
+        margin: auto;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+}

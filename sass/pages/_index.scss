@@ -1,0 +1,32 @@
+.cards-container {
+    padding: 1em;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.main-nav__link--active {
+    color: #E9C46A;
+    letter-spacing: 0px;
+}
+
+.modal_product-item-small img {
+    width: 50px;
+    height: 40px;
+}
+
+.hide-cantidad {
+    display: none;
+}
+
+.main-footer__link p {
+    display: inline-block;
+}
+
+.boton-interaction-compra{
+    transition: .15s all;
+    background-color: white !important;
+}
+

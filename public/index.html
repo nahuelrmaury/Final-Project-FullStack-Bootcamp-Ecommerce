@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__logo-container">
+            <a href="#">
+                <img src="img/logo/logo.png" alt="">
+                <h2>Juguetería Cós<span class="main-header__sub-logo">mica</span>
+            </a>
+        </div>
+        <div class="main-header__search-form-container">
+            <input>
+            <button>Buscar</button>
+        </div>
+        <div class="main-header__cart-button-container">
+            <button id="boton-carrito"><img src="img/icons/logo-cart.png" alt="Logo"><span
+                    id="contadorCarrito">0</span></button>
+        </div>
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
+
+                </div>
+
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <div class="btns-format">
+                    <form action="/cart" method="post">
+                        <button id="comprar-carrito" class="boton-agregar">Comprar</button>
+                    </form>
+                    <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header__hamburger-button-container">
+            <label class="hamburger-button" for="main-nav-toggle" title="Expandir barra de navegación">
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#/inicio" class="main-nav__link" id="inicio">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#/alta" class="main-nav__link" id="alta">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#/contacto" class="main-nav__link" id="contacto">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#/nosotros" class="main-nav__link" id="nosotros">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main"></main>
+
+    <footer class="main-footer">
+        <div class="main-footer__container">
+            <div class="main-footer__footer-main">
+                <div class="main-footer__col-1">
+                    <h2 class="main-footer__logo-design">Juguetería Cós<span class="main-footer__sub-logo">mica</span>
+                    </h2>
+                    <p class="main-footer__about-website">En Juguetería Cósmica trabajamos para que todos los
+                        niños y sus familias puedan encontrar ese juguete tan especial que recordarán con cariño toda su
+                        vida.</p>
+                    <div class="main-footer__follow-us">
+                        <p class="main-footer__follow-us__text">Nuestras redes sociales</p>
+                        <div class="main-footer__icon">
+                            <img src="img/icons/logo-facebook.png">
+                            <img src="img/icons/logo-facebook-mensenger.png">
+                            <img src="img/icons/logo-instagram.png">
+                            <img src="img/icons/logo-whatsapp.png">
+                            <img src="img/icons/logo-youtube.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer__col-2">
+                    <h2 class="main-footer__link-title">Links Útiles</h2>
+                    <ul class="main-footer__links">
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Condiciones</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Preguntas</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Sucursales</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Promociones</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Trámites</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Legales</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Ayuda</li>
+                    </ul>
+                </div>
+                <div class="main-footer__col-3">
+                    <h2 class="main-footer__link-title">Servicios</h2>
+                    <ul class="main-footer__links">
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Chat en vivo / Support</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Ventas empresariales</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Medios de pago</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Plazos y costos de entrega
+                        </li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Cambios y devoluciones</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Información de marca</li>
+                        <li class="main-footer__link"><img src="img/icons/arrow.png">Tarjeta Juguetería Cósmica
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-footer__col-4">
+                    <h2 class="main-footer__link-title__sub">Suscribite a nuestro boletín informativo</h2>
+                    <p class="main-footer__subscribe-text">Podrás recibir todas las novedades que desees en tu
+                        correo electrónico.</p>
+                    <div class="main-footer__payment">
+                        <input class="main-footer__input-box" type="email" placeholder="ejemplo@ejemplo.com"
+                            name="suscribe" required>
+                        <input class="main-footer__sub-button" type="submit" value="Suscribirse">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer__copyright">
+            <a class="main-footer__copyright__by" href="https://www.linkedin.com/in/nahuel-rodr%C3%ADguez-maury/"
+                target="_blank">
+                <p>Powered by Nahuel Rodríguez Maury</p>
+            </a>
+            <ul class="main-footer__copyright__legal-info">
+                <li>Avisos legales</li>
+                <li>¿Cómo cuidamos tu privacidad?</li>
+            </ul>
+            <ul class="main-footer__payment-legal">
+                <li><img src="img/payments/logo-mercado-pago.png"></li>
+                <li><img src="img/payments/logo-cace.png"></li>
+                <li><img src="img/payments/hotsale.png"></li>
+                <li><img src="img/payments/data-fiscal-6dc7613071.png"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/vendor/handlebars.min-v4.7.7.js"></script>
+
+    <script src="js/main.js" type="module"></script>
+
+</body>
+
+</html>
